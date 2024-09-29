@@ -1,0 +1,13 @@
+set timeout& set time interval:
+these are asynchrounous concepts
+STO is used to delay ur code execution
+STI is used to repeat the code again and again
+STO(call back func,delay)
+STO(()=>{
+cosole.log("delayed")},2000)
+
+web API:
+ fetch API
+  DOM API
+  timeouts and intervals
+  geolocation API

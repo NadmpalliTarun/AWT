@@ -1,0 +1,41 @@
+body {
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #007bff;
+}
+
+h1 {
+    font-family: 'Comic Sans MS', sans-serif;
+    color: #fff;
+}
+
+#addForm .form-control {
+    font-size: 1.2rem;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-success, .btn-danger {
+    margin-left: 10px;
+}
+
+#lblsuccess {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.card-header {
+    font-size: 1.5rem;
+}
