@@ -9,14 +9,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Full viewport height */
-            margin: 0; /* Remove default margin */
-            background-color: black; /* Background color for the body */
+            height: 100vh;
+            margin: 0; 
+            background-color: black; 
         }
 
         #gameCanvas {
-            background-color: #333; /* Darker background for the canvas */
-            border: 2px solid white; /* Add a border for better visibility */
+            background-color: #333; 
+            border: 2px solid white; 
         }
     </style>
 </head>
@@ -43,9 +43,8 @@
     let gameOverMessage = "";
     let game = null;
 
-    // Automatically start the game
     window.onload = function() {
-        game = setInterval(draw, 150); // Draw the game at a 150ms interval
+        game = setInterval(draw, 150); 
     };
 
     document.addEventListener('keydown', direction);
@@ -61,7 +60,7 @@
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         for (let i = 0; i < snake.length; i++) {
-            ctx.fillStyle = (i === 0) ? 'green' : 'white'; // Head green, body white
+            ctx.fillStyle = (i === 0) ? 'green' : 'white'; 
             ctx.fillRect(snake[i].x, snake[i].y, box, box);
             ctx.strokeStyle = 'red';
             ctx.strokeRect(snake[i].x, snake[i].y, box, box);
@@ -126,6 +125,7 @@
     }
 
     function displayEndScreen() {
+
         ctx.fillStyle = "white";
         ctx.font = "20px Arial";
         ctx.fillText(gameOverMessage, canvas.width / 4, canvas.height / 2 - 20);
